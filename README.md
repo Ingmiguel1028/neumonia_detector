@@ -17,22 +17,14 @@ A continuación le explicaremos cómo empezar a utilizarla.
 
 Requerimientos necesarios para el funcionamiento:
 
-- Instale Anaconda para Windows siguiendo las siguientes instrucciones:
-	 https://docs.anaconda.com/anaconda/install/windows/
-
-- Abra Anaconda Prompt y ejecute las siguientes instrucciones:
-	
-	conda create -n tf tensorflow	
-	
-	conda activate tf	
-	
-	git clone https://isabella83tr@bitbucket.org/isabella83tr/codes.git
-	
-	cd codes
-
-	pip install -r requirements.txt
-
-	python detector_neumonia.py
+-Tener en funcionamiento docker
+ Luego dirigirse al CMD y seguir las siguientes instrucciones:
+- git clone https://github.com/jdSystemIU/neumonia_detector
+- docker build -t python:latest .
+- docker run -it --rm -e DISPLAY=host.docker.internal:0 --net host python bash
+- curl -O https://download2292.mediafire.com/zmb2guhiqptg/qf4dvvl7qqn4xey/WilhemNet_86.h5
+- python main.py
+----------------------------------------------------------------------------------
 	
 Uso de la Interfaz Gráfica:
 
@@ -98,6 +90,3 @@ Es una técnica utilizada para resaltar las regiones de una imagen que son impor
 
 Grad-CAM realiza el cálculo del gradiente de la salida correspondiente a la clase a visualizar con respecto a las neuronas de una cierta capa de la CNN. Esto permite tener información de la importancia de cada neurona en el proceso de decisión de esa clase en particular. Una vez obtenidos estos pesos, se realiza una combinación lineal entre el mapa de activaciones de la capa y los pesos, de esta manera, se captura la importancia del mapa de activaciones para la clase en particular y se ve reflejado en la imagen de entrada como un mapa de calor con intensidades más altas en aquellas regiones relevantes para la red con las que clasificó la imagen en cierta categoría.
 
-## Realizado por:
-Isabella Torres Revelo - https://github.com/isa-tr
-Nicolas Diaz Salazar - https://github.com/nicolasdiazsalazar

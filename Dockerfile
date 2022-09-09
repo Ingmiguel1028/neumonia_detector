@@ -16,4 +16,4 @@ RUN pip install opencv-contrib-python-headless
 
 COPY . /app
 WORKDIR /app
-CMD ["python", "detector_neumonia.py"]
+CMD ["python", "main.py"]

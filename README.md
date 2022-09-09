@@ -13,27 +13,28 @@ Aplicación de una técnica de explicación llamada Grad-CAM para resaltar con u
 ---
 ## Uso de la herramienta:
 
-A continuación le explicaremos cómo empezar a utilizarla.
+Requerimientos necesarios para el funcionamiento del archivo:
 
-Requerimientos necesarios para el funcionamiento:
-
--Tener en funcionamiento docker
- Luego dirigirse al CMD y seguir las siguientes instrucciones:
-- git clone https://github.com/jdSystemIU/neumonia_detector
+-primero ejecutar docker
+-posteriormente acceder al simbolo del sistema (CMD) y seguir las siguientes instrucciones:
+- git clone hhttps://github.com/Ingmiguel1028/neumonia_detector
 - docker build -t python:latest .
 - docker run -it --rm -e DISPLAY=host.docker.internal:0 --net host python bash
-- curl -O https://download2292.mediafire.com/zmb2guhiqptg/qf4dvvl7qqn4xey/WilhemNet_86.h5
+- curl "https://www.dropbox.com/s/yx6n606i7cfcvoz/WilhemNet_86.h5?dl=1&quot; -L -o WilhemNet_86.h5
 - python main.py
 ----------------------------------------------------------------------------------
-	
-Uso de la Interfaz Gráfica:
+
+Para utilizar la aplicación:
 
 - Ingrese la cédula del paciente en la caja de texto
-- Presione el botón 'Cargar Imagen', seleccione la imagen del explorador de archivos del computador
+- Presione el botón 'Cargar Imagen', seleccione la imagen del explorador de archivos
+del computador
 - Presione el botón 'Predecir' y espere unos segundos hasta que observe los resultados
-- Presione el botón 'Guardar' para almacenar la información del paciente en un archivo excel con extensión .csv
+- Presione el botón 'Guardar' para almacenar la información del paciente en un archivo excel
+con extensión .csv
 - Presione el botón 'PDF' para descargar un archivo PDF con la información desplegada en la interfaz
-- Presión el botón 'Borrar' si desea cargar una nueva imagen
+- Presión el botón 'Limpiar' si desea cargar una nueva imagen.
+
 
 ---
 

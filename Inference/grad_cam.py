@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
-from INFERENCE import preprocess_img
-from INFERENCE import load_model
+from Inference import preprocess_img
+from Inference import load_model
 from tensorflow.keras import backend as K
 import tensorflow as tf
 tf.compat.v1.disable_eager_execution()

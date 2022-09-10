@@ -2,9 +2,9 @@ import numpy as np
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras import models
-from INFERENCE import grad_cam
-from INFERENCE import preprocess_img
-from INFERENCE import load_model
+from Inference import grad_cam
+from Inference import preprocess_img
+from Inference import load_model
 def predict(array): 
     #   1. call function to pre-process image: it returns image in batch format
     batch_array_img = preprocess_img.preprocess(array)

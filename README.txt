@@ -1,3 +1,4 @@
+ 
 Hola! Bienvenido a la herramienta para la detección rápida de neumonía.
 
 A continuación le explicaremos cómo empezar a utilizarla
